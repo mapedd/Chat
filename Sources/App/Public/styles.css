@@ -1,0 +1,51 @@
+.chat-row {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--muted);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-row .sender {
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.chat-row .message {
+  margin-bottom: 0.5rem;
+}
+
+.chat-row .date {
+  font-size: 0.875rem;
+  color: var(--gray);
+  text-align: right;
+}
+
+/* Message box */
+
+
+#messages {
+  padding-bottom: 70px; /* Space for form at bottom */
+  max-height: calc(100vh - 100px); /* Keep messages within viewport */
+  overflow-y: auto;
+}
+
+/* Style the form container to stick to the bottom of the screen */
+.message-form-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--pico-foreground);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+/* Set the width of the form within the container */
+#group {
+  width: 80%;
+}
